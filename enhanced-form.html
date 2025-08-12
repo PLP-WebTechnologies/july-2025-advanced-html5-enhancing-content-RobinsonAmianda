@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Form with Lists, Tables, and Media</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        header, section, footer {
+            margin-bottom: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid #333;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        fieldset {
+            margin-bottom: 20px;
+            padding: 15px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #0077cc;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005fa3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>HTML5 Lists, Tables, Media & Form Example</h1>
+    <p>This page demonstrates the use of lists, tables, embedded media, and a fully accessible HTML5 form.</p>
+</header>
+
+<!-- Lists -->
+<section>
+    <h2>Favorite Programming Languages</h2>
+    <ul>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>Java</li>
+        <li>C#</li>
+        <li>PHP</li>
+    </ul>
+
+    <h2>Steps to Learn Web Development</h2>
+    <ol>
+        <li>Learn HTML for structure.</li>
+        <li>Learn CSS for styling.</li>
+        <li>Learn JavaScript for interactivity.</li>
+        <li>Practice building projects.</li>
+        <li>Learn backend development.</li>
+    </ol>
+</section>
+
+<!-- Table -->
+<section>
+    <h2>Web Development Framework Comparison</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Framework</th>
+                <th>Language</th>
+                <th>Key Feature</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Django</td>
+                <td>Python</td>
+                <td>Rapid Development</td>
+            </tr>
+            <tr>
+                <td>React</td>
+                <td>JavaScript</td>
+                <td>Component-Based</td>
+            </tr>
+            <tr>
+                <td>Laravel</td>
+                <td>PHP</td>
+                <td>MVC Architecture</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<!-- Media -->
+<section>
+    <h2>HTML5 Media Example</h2>
+    <figure>
+        <img src="mern.jpg" alt="Placeholder Image" style="width:100%;max-width:600px;">
+        <figcaption>A placeholder image example.</figcaption>
+    </figure>
+
+    <figure>
+        <audio controls>
+            <source src="tubidy_mp3_56428.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <figcaption>Sample Audio Clip</figcaption>
+    </figure>
+
+    <figure>
+        <video controls width="600">
+            <source src="https://www.youtube.com/watch?v=ADXNcv6KbMQ4.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+        <figcaption>Sample Video Clip</figcaption>
+    </figure>
+</section>
+
+<!-- Form -->
+<section>
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+        
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" placeholder="Enter first name" required minlength="2">
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" placeholder="Enter last name" required minlength="2">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email">
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Account Details</legend>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Choose a username" required pattern="[A-Za-z0-9]{5,15}" title="5-15 alphanumeric characters">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Choose a password" required minlength="6">
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter password" required minlength="6">
+
+            <label for="role">Select Role:</label>
+            <select id="role" name="role" required>
+                <option value="">--Select--</option>
+                <option value="student">Student</option>
+                <option value="instructor">Instructor</option>
+                <option value="admin">Administrator</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferences</legend>
+            <label>
+                <input type="checkbox" name="newsletter" value="yes">
+                Subscribe to newsletter
+            </label>
+
+            <label>Preferred Contact Method:</label>
+            <label><input type="radio" name="contact" value="email" required> Email</label>
+            <label><input type="radio" name="contact" value="phone"> Phone</label>
+
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Enter your comments here..."></textarea>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 HTML5 Example Page</p>
+</footer>
+
+</body>
+</html>
